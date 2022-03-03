@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<!--
+     Ryan Hogan
+    for CSC102 Class
+-->
+
+<head>
+    <script src="JSCode.js"></script>
+    <link href="style.css" rel="stylesheet">
+    <title>
+        Ryan Hogan UATSpace Page
+    </title>
+</head>
+
+<body>
+    <table>
+        <td>
+            <img src="SpaceLogo.jpg">
+        </td>
+        <td>
+            <h1>
+                UAT Space Program
+            </h1>
+        </td>
+    </table>
+
+    <table id="data" border="2" width="70%">
+        <col style="width: 35%">
+        <col style="width: 35%">
+        <thead>
+            <th>Data type</th>
+            <th>Reading</th>
+        </thead>
+        <tbody>
+            <tr id="seconds"><td>Time Elapsed:</td><td>15 seconds</td></tr>
+            <tr id="latitude"><td>Latitude:</td><td>0</td></tr>
+            <tr id="longitude"><td>Longitude:</td><td>0</td></tr>
+            <tr id="gpsSensor_alt"><td>GPS altitude:</td><td>0</td></tr>
+            <tr id="bmpSensor_alt"><td>bmp altitude:</td><td>30383.04</td></tr>
+            <tr id="bmpSensor_pres"><td>bmp pressure:</td><td>2.34</td></tr>
+            <tr id="bmpSensor_temp"><td>bmp temperature:</td><td>0</td></tr>
+            <tr id="digSensor_temp"><td>digital temperature:</td><td>24.12</td></tr>
+            <tr id="cssSensor_temp"><td>CSS temperature:</td><td>25</td></tr>
+            <tr id="cssSensor_eCO2"><td>CSS eCO2:</td><td>400</td></tr>
+            <tr id="cssSensor_TVOC"><td>CSS TVOC:</td><td>0</td></tr>
+            <tr id="UV"><td>UV:</td><td>0</td></tr>
+            <tr id="accelX"><td>accelX:</td><td>-0.87</td></tr>
+            <tr id="accelY"><td>accelY:</td><td>-0.02</td></tr>
+            <tr id="accelZ"><td>accelZ:</td><td>9.61</td></tr>
+            <tr id="magneticX"><td>magneticX:</td><td>0.13</td></tr>
+            <tr id="magneticY"><td>magneticY:</td><td>0.57</td></tr>
+            <tr id="magneticZ"><td>magneticZ:</td><td>-0.24</td></tr>
+            <tr id="gyroX"><td>gyroX:</td><td>4.66</td></tr>
+            <tr id="gyroY"><td>gyroY:</td><td>0.01</td></tr>
+            <tr id="gyroZ"><td>gyroZ:</td><td>-0.4</td></tr>
+        </tbody>
+    </table>
+
+    <br>
+    <br>
+
+    <div id="blastOffText">
+        Blastoff Status will be presented here
+    </div>
+
+    <br>
+
+    <button id="startButton" onclick="start();">
+        Start
+    </button>
+
+    <button id="stopButton" onclick="stop();">
+        Stop
+    </button>
+
+    <br>
+    <br>
+
+    <div id="crapsResults">Craps Results</div>
+    <div id="die1Results">Result for die1</div>
+    <div id="die2Results">Result for die2</div>
+    <div id="sumResults">Sum of both dice</div>
+    <br>
+    <button onclick="playCraps();">Play Craps</button>
+    <br>
+    <br>
+    Number of wins: <div id="wins">0</div>
+    Number of losses: <div id="losses">0</div>
+    Number of ties: <div id="ties">0</div>
+</body>
+
+</html>
